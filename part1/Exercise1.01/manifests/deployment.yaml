@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: exercise1
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: Log-App
+  template:
+    metadata:
+      labels:
+        app: Log-App
+    spec:
+      containers:
+      - name: 
+        image: mabasso25/exercise1
+        
